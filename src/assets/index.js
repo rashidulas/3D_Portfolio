@@ -25,9 +25,17 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import oit from "./company/oit.png";
+import aces from "./company/aces.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
+import datathon from "./datathon.png";
+import lung from "./lung.png";
+import statefarm from "./statefarm.png";
+import library from "./library.png";
+import cam from "./cam.png";
+import pricespy from "./pricespy.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -56,7 +64,15 @@ export {
   shopify,
   starbucks,
   tesla,
+  oit,
+  aces,
   carrent,
   jobit,
+  datathon,
+  lung,
+  statefarm,
+  library,
+  cam,
+  pricespy,
   tripguide,
 };

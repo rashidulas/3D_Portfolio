@@ -1,45 +1,38 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import profilePicture from "../assets/profilePicture.png";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className="relative w-full h-screen mx-auto bg-black bg-opacity-40">
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-1/4 max-w-7xl mx-auto ${styles.paddingX} flex flex-col items-center gap-5`}
       >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+        <div className="flex flex-col items-center">
+          
+        <div className="flex flex-col items-center">
+          {/* Profile Picture */}
+          <div className="relative w-40 h-40 rounded-full bg-white flex justify-center items-center">
+            <img
+              src={profilePicture}
+              alt="Sami"
+              className="w-36 h-36 object-cover rounded-full transform scale-110"
+            />
+          </div>
         </div>
-
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+          <h1 className={`${styles.heroSubText} mt-2 text-gray-300 text-center`}>
+            Hello I'm <span className="text-white-200">Md Rashidul Alam Sami</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
-          </p>
         </div>
       </div>
 
-      <ComputersCanvas />
-
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+      <div className="absolute bottom-10 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-8 h-16 rounded-full border-2 border-gray-400 flex justify-center items-start p-2">
             <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
+              animate={{ y: [0, 20, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
+              className="w-4 h-4 rounded-full bg-white"
             />
           </div>
         </a>
