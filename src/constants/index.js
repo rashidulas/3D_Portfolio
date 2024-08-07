@@ -6,6 +6,10 @@ import {
   javascript,
   typescript,
   html,
+  django,
+  cs,
+  cpp,
+  java,
   css,
   reactjs,
   redux,
@@ -35,12 +39,16 @@ import {
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: "home",
+    title: "Home",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "about",
+    title: "About Me",
+  },
+  {
+    id: "portfolio",
+    title: "Portfolio",
   },
   {
     id: "contact",
@@ -48,7 +56,9 @@ export const navLinks = [
   },
   {
     id: "resume",
-    title: "Resume"
+    title: "Resume",
+    external: true, // New field to indicate it's an external link
+    url: "/RESUME.pdf", // URL for the resume
   }
 ];
 
@@ -73,12 +83,24 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "Python",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "C",
     icon: css,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "C#",
+    icon: cs,
+  },
+  {
+    name: "Java",
+    icon: java,
   },
   {
     name: "JavaScript",
@@ -93,16 +115,20 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: "NextJS",
     icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "Django",
+    icon: django,
+  },
+  {
+    name: "Flutter",
+    icon: tailwind,
   },
   {
     name: "MongoDB",
@@ -117,12 +143,24 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
+    name: "Anaconda",
     icon: figma,
   },
   {
-    name: "docker",
+    name: "Android Studio",
     icon: docker,
+  },
+  {
+    name: "HTML",
+    icon: css,
+  },
+  {
+    name: "CSS",
+    icon: css,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: css,
   },
 ];
 

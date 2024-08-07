@@ -12,6 +12,10 @@ import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
+import cpp from "./tech/cpp.png";
+import cs from "./tech/cs.png";
+import django from "./tech/django.png";
+import java from "./tech/java.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
@@ -52,6 +56,10 @@ export {
   figma,
   git,
   html,
+  cs,
+  cpp,
+  django,
+  java,
   javascript,
   mongodb,
   nodejs,

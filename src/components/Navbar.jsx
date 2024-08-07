@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { FaGithub, FaLinkedin } from "react-icons/fa"; // Import icons
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
@@ -44,7 +44,7 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-             Rashidul&nbsp;
+            Rashidul&nbsp;
             <span className='sm:block hidden'>AS</span>
           </p>
         </Link>
@@ -58,9 +58,21 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav.external ? (
+                <a href={nav.url} target="_blank" rel="noopener noreferrer">{nav.title}</a>
+              ) : (
+                <Link to={`/${nav.id}`}>{nav.title}</Link>
+              )}
             </li>
           ))}
+          <li className="flex items-center space-x-4">
+            <a href="https://github.com/rashidulas" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={20} className="text-white hover:text-gray-600" />
+            </a>
+            <a href="https://www.linkedin.com/in/rashidulas/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={20} className="text-white hover:text-gray-600" />
+            </a>
+          </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -88,9 +100,21 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {nav.external ? (
+                    <a href={nav.url} target="_blank" rel="noopener noreferrer">{nav.title}</a>
+                  ) : (
+                    <Link to={`/${nav.id}`}>{nav.title}</Link>
+                  )}
                 </li>
               ))}
+              <li className="flex items-center space-x-4">
+                <a href="https://github.com/rashidulas" target="_blank" rel="noopener noreferrer">
+                  <FaGithub size={20} className="text-white hover:text-gray-600" />
+                </a>
+                <a href="https://linkedin.com/in/rashidulas" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin size={20} className="text-white hover:text-gray-600" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>

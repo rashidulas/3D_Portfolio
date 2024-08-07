@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import profilePicture from "../assets/profilePicture.png";
+import Footer from "./Footer";
 
 const Hero = () => {
   return (
@@ -26,7 +27,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-10 w-full flex justify-center items-center">
+      {/* <div className="absolute bottom-10 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-8 h-16 rounded-full border-2 border-gray-400 flex justify-center items-start p-2">
             <motion.div
@@ -36,7 +37,8 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div>
+      </div> */}
+
     </section>
   );
 };

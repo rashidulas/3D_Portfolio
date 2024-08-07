@@ -1,30 +1,35 @@
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider, BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import HomePage from "./pages/HomePage";
+import MainLayout from "./layouts/MainLayout";
+import { About, Contact, Navbar, Works } from "./components";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<MainLayout />}>
+       <Route index element={<HomePage />} />
+       <Route path='/home' element={<HomePage />} />
+       <Route path='/contact' element={<Contact />} />
+       <Route path='/portfolio' element={<Works />} />
+       <Route path='/about' element={<About />} />
+    </Route>
+  )
+);
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className='relative z-0 bg-black'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <div className='relative z-0'>
-          <Hero />
-          <StarsCanvas />
-        </div>
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        {/* <Feedbacks /> */}
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
-      </div>
-    </BrowserRouter>
+    <RouterProvider router={router} />
   );
 }
 
 export default App;
+
+
+
+// Navbar
+// Home
+// About me 
+// Portfolio
+// Contact
+// Resume
+// Footer
