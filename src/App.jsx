@@ -3,6 +3,7 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider, B
 import HomePage from "./pages/HomePage";
 import MainLayout from "./layouts/MainLayout";
 import { About, Contact, Navbar, Works } from "./components";
+import LegalDisclaimer from "./components/LegalDisclaimer";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -12,6 +13,7 @@ const router = createBrowserRouter(
        <Route path='/contact' element={<Contact />} />
        <Route path='/portfolio' element={<Works />} />
        <Route path='/about' element={<About />} />
+       <Route path='/legal-disclaimer' element={<LegalDisclaimer />} />
     </Route>
   )
 );
