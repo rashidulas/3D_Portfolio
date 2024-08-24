@@ -322,7 +322,7 @@ const projects = [
       },
     ],
     image: pricespy,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/rashidulas/pricespy",
   },
   {
     name: "HomeSecurity",
