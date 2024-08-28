@@ -220,6 +220,27 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Trasva",
+    description:
+      "Spearheaded the development of a comprehensive social media platform, enabling users to share and track travel experiences with real-time location data and user-generated content, integrated Google API for location-based advanced search algorithm that enhanced trip discovery by 40%. Established an efficient data management framework by integrating UploadThing for image storage and MongoDB for data retrieval, enhancing users' ability to follow places and other travelers, making trip planning easier and more informed.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: datathon,
+    source_code_link: "https://github.com/",
+  },
+  {
     name: "UTA Datathon Website",
     description:
       "Managed the development of the UTA Datathon 2024 website, utilizing Firebase backend and React.js frontend; established secure sign-in with unique QR code registration, streamlining entry for over 400 students.Leveraged Google Maps API to develop an interactive venue map, enabling users to easily locate venues and optimizing the user experience. ",
