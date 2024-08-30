@@ -24,6 +24,16 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import tensorflow from "./tech/tensorflow.png";
+import firebase from "./tech/firebase.png";
+import androidstudio from "./tech/androidstudio.png";
+import anaconda from "./tech/anaconda.png";
+import matlab from "./tech/matlab.png";
+import c from "./tech/c.png";
+import python from "./tech/python.png";
+import flutter from "./tech/flutter.png";
+import nextjs from "./tech/nextjs.png";
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -83,4 +93,13 @@ export {
   cam,
   pricespy,
   tripguide,
+  tensorflow,
+  firebase,
+  androidstudio,
+  anaconda,
+  matlab,
+  c,
+  python,
+  flutter,
+  nextjs,
 };

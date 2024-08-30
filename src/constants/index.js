@@ -35,6 +35,15 @@ import {
   jobit,
   tripguide,
   threejs,
+  tensorflow,
+  firebase,
+  androidstudio,
+  anaconda,
+  matlab,
+  c,
+  flutter,
+  python,
+  nextjs,
 } from "../assets";
 
 export const navLinks = [
@@ -84,11 +93,11 @@ const services = [
 const technologies = [
   {
     name: "Python",
-    icon: html,
+    icon: python,
   },
   {
     name: "C",
-    icon: css,
+    icon: c,
   },
   {
     name: "C++",
@@ -116,11 +125,15 @@ const technologies = [
   },
   {
     name: "NextJS",
-    icon: redux,
+    icon: nextjs,
   },
   {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "React Native",
+    icon: reactjs,
   },
   {
     name: "Django",
@@ -128,7 +141,7 @@ const technologies = [
   },
   {
     name: "Flutter",
-    icon: tailwind,
+    icon: flutter,
   },
   {
     name: "MongoDB",
@@ -144,15 +157,27 @@ const technologies = [
   },
   {
     name: "Anaconda",
-    icon: figma,
+    icon: anaconda,
+  },
+  {
+    name: "Matlab",
+    icon: matlab,
+  },
+  {
+    name: "Tensorflow",
+    icon: tensorflow,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
   },
   {
     name: "Android Studio",
-    icon: docker,
+    icon: androidstudio,
   },
   {
     name: "HTML",
-    icon: css,
+    icon: html,
   },
   {
     name: "CSS",
@@ -160,7 +185,7 @@ const technologies = [
   },
   {
     name: "Tailwind CSS",
-    icon: css,
+    icon: tailwind,
   },
 ];
 
